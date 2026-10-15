@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Serviços</title>
+     <!-- Colocar o icon no separador do website(navegadores mais recentes) -->
+    <link rel="shortcut icon" href="../images/safe_black.ico" type="image/x-icon">
+    <!-- Colocar o icon no separador do website(navegadores antigos) -->
+    <link rel="icon" href="../images/safe_black.ico" type="image/ico">
+
+    <!-- css estilos -->
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+    <div class="header" >
+        <a href="./index.html">
+            <img class="logo" src="../images/safe_white.png">
+        </a>
+        <div class="menu">
+         <ul>
+               <li><a href="./index.html">Quem somos</a></li>
+              <li><a href="./servicos.html">Serviços</a></li>
+               <li><a href="./contactonos.html">Contacte-nos</a></li>
+            </ul> 
+         </div>
+         <div class="menu-m">
+            <li class="dropdown">
+                <a class="toggleMenu" href="#"><img src="../images/menu.png" alt="" width="30px" height="30px" /> </a>
+                <div class="dropdown-content">
+                    <a href="./index.html">Quem somos</a>
+                    <a href="./servicos.html">Serviços</a>
+                    <a href="./contactonos.html">Contacte-nos</a>
+                </div>
+            </li>
+        </div>
+        <div id="data-hora" class="data-hora"></div>
+
+    </div>
+
+        <h1>Serviços disponiveis:</h1>
+
+        <div class="container-body-table">
+             <table>
+                  <thead>
+                     <tr>
+                          <th>Pensando em Empresas</th>
+                           <th>Pensando para Pessoas</th>
+                     </tr>
+                  </thead>
+                    <tbody>
+                     <tr>
+                           <td>Eventos</td>
+                            <td>Segurança eletronica</td>
+                       </tr>
+                     <tr>
+                            <td>Vigilançia</td>
+                            <td>Proteção Pessoal</td>
+                        
+                        </tr>
+        
+                    </tbody>
+                </table>
+        </div>
+    
+
+
+
+
+        <div class="container-body-grey" >
+            <h1 onclick="toggleService('vigilancia')">VIGILÂNCIA</h1>
+            <div class="container-content" id="vigilancia-content">
+                <img src="../images/logo-ipv.png" alt="Logo IPV" width="250px">
+                <p>
+                    A SAFE providencia segurança e vigilância 24h por dia para
+                    estabelecimentos como Escolas, Shoppings, Hospitais e muitos outros! 
+                    As nossas equipas de vigilância são testadas semanalmente para garantir 
+                    que estão em boas condições para o seu trabalho!
+                </p>
+                <p>
+                    O nosso método inicia-se com a instalação profissional de câmaras de vigilância em locais estratégicos. 
+                    Estas câmaras são monitorizadas em tempo real, pelos nossos seguranças.
+                </p>
+                <p>
+                    Além de fornecermos a segurança com câmaras, temos seguranças presentes fisicamente. Estes, dependendo da infraestrutura,
+                    podem realizar patrulhas no local, controlar de entradas, etc.
+                </p>
+            </div>
+        </div>
+    
+        <div class="container-body-grey" >
+            <h1 onclick="toggleService('eventos')">Eventos</h1>
+            <div class="container-content" id="eventos-content">
+                <img src="../images/logo-ipv.png" alt="Logo IPV" width="250px">
+                <p>
+                    Precisa de segurança no seu evento? A SAFE está aqui para o ajudar! 
+                    Temos várias equipas treinadas para atuar com discrição e eficiência na proteção de convidados, 
+                    organizadores, bens materiais, e toda a infraestrutura do evento!
+                </p>
+                <p>
+                    A nossa abordagem à segurança de eventos visa garantir um ambiente seguro e livre de preocupações
+                     durante qualquer tipo de ocasião. Seja um evento corporativo, um festival vibrante ou uma conferência movimentada, 
+                     a nossa equipa especializada assegura não apenas uma presença visível, mas também a implementação estratégica de sistemas de
+                      vigilância por vídeo e controlo de acesso. Os nossos agentes altamente treinados são hábeis na prevenção de incidentes e na coordenação 
+                      eficaz em situações de emergência. Ao escolher os nossos serviços, está a investir na tranquilidade dos participantes e no sucesso do seu
+                       evento, com uma abordagem integrada à segurança.
+                </p>
+            </div>
+        </div>
+    
+        <div class="container-body-grey" >
+            <h1 onclick="toggleService('protecao-pessoal')">Proteção Pessoal</h1>
+            <div class="container-content" id="protecao-pessoal-content">
+                <img src="../images/logo-ipv.png" alt="Logo IPV" width="250px">
+                <p>
+                    A SAFE fornece equipas experientes em proteção pessoal para Celebridades, Executivos e outros VIPs e seus 
+                    respetivos familiares e amigos. Os nossos seguranças passam por treinos diários para melhorar a sua atenção aos arredores e defesa caso algum ataque aconteça.
+                </p>
+                <p>
+                    A nossa abordagem à segurança pessoal vai além do convencional, visando criar um ambiente onde os clientes se sintam seguros e protegidos em todas as circunstâncias.
+                    Cada membro da nossa equipa é cuidadosamente selecionado, treinado e comprometido para com missão de garantir a tranquilidade e a segurança total dos nossos clientes.
+                </p>
+                <p>
+                    Além disso, oferecemos uma abordagem personalizada, adaptando-nos às necessidades específicas de cada cliente. Entendemos que a segurança pessoal não é 
+                    apenas uma questão de presença física, mas também exige um entendimento profundo das circunstâncias individuais e dos potenciais riscos envolvidos. 
+                    A SAFE trabalha em estreita colaboração com os clientes para desenvolver estratégias de segurança personalizadas, garantindo uma resposta eficaz a qualquer situação.
+                </p>
+            </div>
+        </div>
+    
+        <div class="container-body-grey" >
+            <h1 onclick="toggleService('seguranca-eletronica')">Segurança Eletrônica</h1>
+            <div class="container-content" id="seguranca-eletronica-content">
+                <img src="../images/logo-ipv.png" alt="Logo IPV" width="250px">
+                <p>
+                    A SAFE providencia e monitora soluções personalizadas com câmaras, 
+                    alarmes e sensores de última geração! O nosso centro de supervisão de 24h garante uma resposta rápida a emergências e uma imobilização seguranças se necessário.
+                </p>
+                <p>
+                    Na SAFE, não nos limitamos à instalação de câmaras,
+                    os clientes possuem o controlo da segurança de sua casa.
+                    Além disso se nós detetarmos algo de anormal contactaremos o cliente
+                    mandaremos uma equipa de segurança e se for realmente necessário 
+                    contataremos as autoridades.
+                </p>
+            </div>
+        </div>
+
+
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                Telefone: 123 456 789 | Telemóvel: 987 654 321 | Email: info@safe.pt 
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/miguel.af.silva" target="_blank"><img src="../images/facebook-icon.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/mvicenteee/" target="_blank"><img src="../images/Instagram_icon.png" alt="Insta"></a>
+                <a href="https://www.linkedin.com/school/instituto-polit%C3%A9cnico-de-viseu/mycompany/" target="_blank"><img src="../images/linkedin.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+        <br>
+        <div>
+            &copy; 2024 SAFE - Segurança de Alta Fidelidade e Excelência      
+        </div>
+    </footer>
+
+
+
+    <!-- scripts -->
+    <script src="../javascript/javascript.js"></script>
+    
+    </body>
+    </html>
